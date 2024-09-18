@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    max-height: 10rem;
+}
+
+.Himanshu-logo {
+    height: 20rem;
+    width: 20rem;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+    cursor: pointer;
+}
+/* .nav-list li:hover {
+    transform: scale(1.3);
+    transition: 0.4s;
+} */
+
+.nav-contact {
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 0;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+.nav-contact:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+/* .nav-list img{
+    width: 3rem;
+} */
+.nav-list li{
+    position: relative;
+}
+.nav-list .nav-list-img{
+    position: absolute;
+    width: 4rem;
+    position: absolute;
+    right: -0.4rem;
+    bottom: 0rem;
+    z-index: -1;
+}
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.Connectme{
+    margin-left: 23%;
+    margin-top: -100%;
+    margin-bottom: 10%;
+    position: fixed;
+    width: 50%;
+    border-radius: 20px;
+    padding: 1rem;
+    transition: 0.5s;
+    background-color: rgb(18, 18, 18);
+    box-shadow: rgba(238, 238, 240, 0.25) 0px 50px 100px -20px, rgba(48, 47, 47, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+}
+.showModel{
+    margin-top: 8%;
+    transition: 0.3s;
+}
+.modelover{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+.showModeloverlay{
+    display: block;
+}
+.closemodel{
+    display: none;
+    transition: 0.3s;
+}
+.connectme-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connectme-title h1{
+    font-size: 2.3rem;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.connectme-section{
+    margin: 2rem;
+}
+.connectme-section ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 2.5rem;
+}
+.connectme-section ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.label-container p{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+.label-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.label-container img{
+    width: 1.5em;
+}
+.link-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+.link-container img{
+    width: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+    font-size: 18px;
+}
+hr{
+    background-color: rgb(128, 125, 125);
+    border: 0;
+    height: 0.1rem;
+}
+.nav-mob-open{
+    display: none;
+}
+.nav-mob-close{
+    display: none;
+}
+
+@media(max-width:770px){
+    .Navbar{
+        margin: 20px 0px;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .nav-contact{
+        display: none;
+    }
+    .nav-mob-open{
+        width: 2.5rem;
+        right: 30px;
+        display: block;
+    }
+    .nav-mob-close{
+        width: 2rem;
+        position: fixed;
+        display: block;
+        right: -100%;
+        top: 5rem;
+    }
+    .nav-list{
+        position: fixed;
+        flex-direction: column;
+        right: -100%;
+        top: 0px;
+        height: 100%;
+        padding: 10rem 2rem 0 2rem;
+        z-index: 2;
+        background: #1f0016;
+        width: 30%;
+        transition: 0.3s;
+    }
+    .nav-list li{
+        flex-wrap: nowrap;
+    }
+    .nav-list li p{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .menu-open{
+        position: fixed;
+        flex-direction: column;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        padding: 10rem 2rem 0 2rem;
+        z-index: 2;
+        background: #1f0016;
+        width: 30%;
+        transition: 0.3s;
+    }
+    .menu-open li{
+        flex-wrap: nowrap;
+    }
+    .menu-open li p{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .nav-mob-menu-display{
+        right: 30px;
+        width: 2rem;
+        position: fixed;
+        display: block;
+        top: 5rem;
+    }
+}
